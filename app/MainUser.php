@@ -9,4 +9,7 @@ class MainUser extends Model
     //
     protected $table="users";
     protected $primaryKey="id";
+    protected $fillable = [
+        'email', 'password'
+    ]; 
 }
