@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class useradController extends Controller
 {
@@ -16,10 +17,13 @@ class useradController extends Controller
     	$user = User::all();
     	return view('admin.user.index');
     }
+
     public function getlogin(){
     	return view('admin.login');
     }
+
     public function postlogin(Request $request){
+    	//dd($request->all());
     	$this->validate($request,[
     		'email' => 'required',
     		'password' => 'required|min:3|max:32'
@@ -36,5 +40,16 @@ class useradController extends Controller
     	else{
     		return redirect('admin/login')->with('thongbao','Đăng nhập không thành công');
     	}
+    }
+
+    public function getcreate(Request $request){
+    	return view('create');
+    }
+    public function postcreate(Request $request){
+    	 	$user = new User;
+        	$user->email = $request->email;
+        	$user->password = Hash::make($request->password);
+        	$user->save();
+        	return redirect('create');
     }
 }
