@@ -71,41 +71,6 @@
             margin-top: 11px;
             padding-bottom: 10px
         }
-        .splash-container .panel .panel-body{
-            padding: 20px 30px 15px;
-        }
-        .panel-body{
-            border-radius: 0 0 3px 3px;
-        }
-        .form-control{
-            border-width: 1px;
-            border-top-color: #bdc0c7;
-            box-shadow: none;
-            padding: 10px 12px;
-            font-size: 15px;
-            transition: none;
-            display: block;
-            width: 100%;
-            height: 48px;
-            line-height: 1.5;
-            background-color: #fff;
-            border: 1px solid #d5d8de;
-            border-radius: 2px;
-        }
-        .btn-xl{
-            padding: 0px 12px;
-            font-size: 15px;
-            line-height: 43px;
-            border-radius: 3px;
-            font-weight: 500;
-        }
-        .btn-primary{
-            background-color: #4285f4; 
-        }
-        .login-submit .btn{
-            margin-top: 20px;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
@@ -115,30 +80,6 @@
                 <div class="panel-heading">
                     <img src="admin_asset/img/vinfast.PNG" alt="logo" width="150px" height="40px" class="logo-img">
                     <span class="splash-description">Chào mừng đến với trang quản trị Vinfast</span>
-                </div>
-                <div class="panel-body">
-                    @if(count($errors) > 0)
-                    <div class="alert alert-danger">
-                        @foreach($errors->all() as $err)
-                            {{$err}}<br>
-                        @endforeach    
-                    </div>
-                    @endif
-                    @if(session('thongbao'))
-                            {{session('thongbao')}}
-                    @endif
-                    <form action="{{route('admin/login')}}" method="POST">
-                        <input type="hidden" name="_token" value="{{csrf_token()}}"/>
-                        <div class="form-group">
-                            <input id="email" type="email" class="form-control" name="email" required autofocus>
-                        </div>
-                        <div class="form-group">
-                            <input id="password" type="password" class="form-control" name="password" required>
-                        </div>
-                        <div class="form-group login-submit">
-                            <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">Đăng nhập</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>

@@ -23,12 +23,9 @@ Route::get('home', 'HomeController@getHome');
 
 
 Route::get('admin/login','useradController@getlogin');
-Route::post('admin/login','useradController@postlogin')->name('admin/login');
-
-Route::get('create','useradController@getcreate');
-Route::post('create','useradController@postcreate')->name('create');
+Route::post('admin/login','useradController@postlogin');
 
 Route::group(['prefix'=>'admin'],function(){
 	Route::get('/','useradController@index');
 	Route::get('user','useradController@getuser');
-});//'middleware'=>'adminlogin'
+});
