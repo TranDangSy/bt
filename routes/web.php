@@ -12,16 +12,11 @@
 */
 
 Route::get('/', function () {
-    return redirect('/home');
+    return view('welcome');
 });
-
-
-Route::get('home', 'HomeController@getHome');
-//Route::get('about-us', 'HomeController@getAbout');
-
-
-
-
+Route::get('home', function () {
+    return view('widget.content');
+});
 Route::get('admin/login','useradController@getlogin');
 Route::post('admin/login','useradController@postlogin');
 
