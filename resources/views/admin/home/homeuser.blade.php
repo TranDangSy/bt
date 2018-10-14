@@ -7,7 +7,7 @@
  	 	padding-top: 60px;
  	 	margin-left: 120px;
 	}
-/*	.widget.widget-tile {
+/*	.client.client-tile {
   		padding: 24px 20px;
   		margin-bottom: 25px;
   		display: table;
