@@ -2,8 +2,8 @@
 <html>
 <head>
     <base href="{{asset('../admin_asset')}}">
-	<title>Login admin</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Login admin</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
     body{
@@ -12,7 +12,7 @@
         line-height: 1.4;
         background: #eee;
     }
-    	.container-fluid{
+        .container-fluid{
             margin-right: auto;
             margin-left: auto;
         }
@@ -109,7 +109,7 @@
     </style>
 </head>
 <body>
-	<div class="container-fluid main-content">
+    <div class="container-fluid main-content">
         <div class="splash-container">
             <div class="panel panel-default panel-border-color panel-border-color-primary">
                 <div class="panel-heading">
@@ -117,17 +117,7 @@
                     <span class="splash-description">Chào mừng đến với trang quản trị Vinfast</span>
                 </div>
                 <div class="panel-body">
-                    @if(count($errors) > 0)
-                    <div class="alert alert-danger">
-                        @foreach($errors->all() as $err)
-                            {{$err}}<br>
-                        @endforeach    
-                    </div>
-                    @endif
-                    @if(session('thongbao'))
-                            {{session('thongbao')}}
-                    @endif
-                    <form action="{{route('admin/login')}}" method="POST">
+                    <form action="{{route('create')}}" method="POST">
                         <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                         <div class="form-group">
                             <input id="email" type="email" class="form-control" name="email" required autofocus>
@@ -136,12 +126,12 @@
                             <input id="password" type="password" class="form-control" name="password" required>
                         </div>
                         <div class="form-group login-submit">
-                            <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">Đăng nhập</button>
+                            <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">Register</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-	</div>
+    </div>
 </body>
 </html>
