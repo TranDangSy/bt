@@ -34,11 +34,8 @@
         .splash-container .panel{
             margin-bottom: 30px;
         }
-        .panel-border-color{
+        .panel-border-color-primary{
             border-top-color: #4285f4;
-        }
-        .panel-border-color{
-            border-top: 3px solid #c9c9c9;
         }
         .panel{
             background-color: #ffffff;
