@@ -7,7 +7,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
     body{
-        font-family: 'Roboto', Arial, sans-serif;
+        font-family: 'Roboto', Arial, sans-serif !important;
         font-size: 13px;
         line-height: 1.4;
         background: #eee;
@@ -17,7 +17,7 @@
             margin-left: auto;
         }
         .main-content{
-            padding-top: 25px;
+            padding-top: 15px;
             padding-left: 25px;
             padding-right: 25px;
         }
@@ -34,22 +34,10 @@
         .splash-container .panel{
             margin-bottom: 30px;
         }
-        .panel-border-color-primary{
-            border-top-color: #4285f4;
-        }
-        .panel{
-            background-color: #ffffff;
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
-            border-width: 0;
-            border-radius: 3px;
-        }
-        .panel-default{
-            border-color: #ddd;
-        }
         .splash-container .panel-heading{
             text-align: center;
             margin-bottom: 20px;
-            padding-top: 40px;
+            padding-top: 20px;
             padding-bottom: 0px;
         }
         .panel-heading{
@@ -67,19 +55,15 @@
             display: block;
             line-height: 20px;
             font-size: 13px;
-            color: #5a5a5a;
+            color:red;;
             margin-top: 11px;
             padding-bottom: 10px
         }
         .splash-container .panel .panel-body{
             padding: 20px 30px 15px;
         }
-        .panel-body{
-            border-radius: 0 0 3px 3px;
-        }
         .form-control{
             border-width: 1px;
-            border-top-color: #bdc0c7;
             box-shadow: none;
             padding: 10px 12px;
             font-size: 15px;
@@ -111,9 +95,9 @@
 <body>
 	<div class="container-fluid main-content">
         <div class="splash-container">
-            <div class="panel panel-default panel-border-color panel-border-color-primary">
+            <div class="panel panel-border-color">
                 <div class="panel-heading">
-                    <img src="admin_asset/img/vinfast.PNG" alt="logo" width="150px" height="40px" class="logo-img">
+                    <img src="https://media.vinfast.vn/frontend02/web_images/vf-livestream-backdrop-animate-logo-3.png" alt="logo" width="100px" height="100px">
                     <span class="splash-description">Chào mừng đến với trang quản trị Vinfast</span>
                 </div>
                 <div class="panel-body">
@@ -130,10 +114,10 @@
                     <form action="{{route('admin/login')}}" method="POST">
                         <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                         <div class="form-group">
-                            <input id="email" type="email" class="form-control" name="email" required autofocus>
+                            <input id="email" type="email" placeholder="Nhập email" class="form-control" name="email" required autofocus>
                         </div>
                         <div class="form-group">
-                            <input id="password" type="password" class="form-control" name="password" required>
+                            <input id="password" type="password" placeholder="Nhập password" class="form-control" name="password" required>
                         </div>
                         <div class="form-group login-submit">
                             <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">Đăng nhập</button>

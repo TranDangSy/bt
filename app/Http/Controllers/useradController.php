@@ -13,9 +13,9 @@ class useradController extends Controller
     public function index(){
     	return view('admin.home.homeuser');
     }
-    public function getuser(){
-    	$user = User::all();
-    	return view('admin.user.index');
+    
+    public function getlaixe(){
+    	return view('admin.home.laixe');
     }
 
     public function getlogin(){
@@ -45,11 +45,17 @@ class useradController extends Controller
     public function getcreate(Request $request){
     	return view('create');
     }
+
     public function postcreate(Request $request){
     	 	$user = new User;
         	$user->email = $request->email;
         	$user->password = Hash::make($request->password);
         	$user->save();
         	return redirect('create');
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('admin/login');
     }
 }
