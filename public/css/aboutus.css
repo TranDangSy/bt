@@ -1,0 +1,22 @@
+.frontpicaboutus{
+    width: 100%;
+}
+.frontpicaboutus > img{
+    display: block;
+    margin: auto;
+    width:750px;
+    height: 450px;
+    margin-top: 50px;
+}
+.text{
+    font-family: "Gilroy ExtraBold";
+    color: whitesmoke;
+    font-size: 25px;
+}
+.opening{
+    display: block;
+}
+.opening > img{
+    display: block;
+    margin: 0 auto;
+}

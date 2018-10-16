@@ -1,0 +1,27 @@
+.navigation a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navigation a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #c00000;
+}
+.actived {
+    border-bottom: 2px solid #c00000;
+}
+.navigation {
+    text-align: right;
+    margin: 28px 60px;
+    font-size: 13px;
+}
+.navigation ul li {
+    display: inline-block;
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
