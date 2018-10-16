@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return redirect('/home');
 });
-Route::get('home', function () {
+Route::get('home', function (){
     return view('widget.content');
 });
 Route::get('aboutus', function () {
@@ -23,10 +23,13 @@ Route::get('aboutus', function () {
 
 Route::get('admin/login','useradController@getlogin');
 Route::post('admin/login','useradController@postlogin')->name('admin/login');
+
 Route::get('create','useradController@getcreate');
 Route::post('create','useradController@postcreate')->name('create');
 
-Route::group(['prefix'=>'admin'],function(){
+Route::get('admin/logout','useradController@logout');
+
+Route::group(['prefix'=>'admin','middleware'=>'adminlogin'],function(){
 	Route::get('/','useradController@index');
-	Route::get('user','useradController@getuser');
+	Route::get('laixe','useradController@getlaixe');
 });

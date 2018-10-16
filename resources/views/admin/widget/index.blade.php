@@ -75,7 +75,6 @@
 .dropdown-btn{
     overflow: hidden;
     height: 0;
-    oveflow: visible;
     height: auto;
     transition : 0.4s;
 }
@@ -91,55 +90,70 @@
     top: 0;
     bottom: 0;
 }
+.btn-danger{
+    padding-left: 60px !important;
+    font-size: 16px !important;
+}
+.home{
+    padding-left: 50px !important;
+}
 </style>
 <body>
     <div class="container" style="width: 100%; height: auto;">
         <div class="row" style="background: #000;">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-2">
                 <a href="admin">
-                <img src="https://vinfast.vn/web_images/vf-logo-image.png" class="img-responsive" style="max-height: 75px; padding: 10px 0px 10px 10px">
+                    <img src="https://vinfast.vn/web_images/vf-logo-image.png" class="img-responsive" style="max-height: 75px; padding: 10px 0px 10px 10px">
                 </a>
+            </div>    
+    </div>{{-- end row --}}
+    <div class="select col-md-2 col-sm-2">
+        <div class="sidenav">
+            <a href="admin" class="home">Trang chủ</a>
+            <button class="dropdown-btn">Quản lí người dùng
+            </button>
+            <div class="dropdown-container">
+                <a href="admin/laixe">Quản lí lái xe</a>
             </div>
-        </div>{{-- end row --}}
-            <div class="select col-md-2">
-            <div class="sidenav">
-                <a href="admin">Trang chủ</a>
-                <button class="dropdown-btn">Quản lí người dùng
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Quản lí lái xe</a>
-                </div>
-                <button class="dropdown-btn">Quản lý hệ thống 
-                    {{-- <i class="fa fa-caret-down"></i> --}}
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Quản lí nhân viên</a>
-                    <a href="#">Liên hệ</a>
-                    <a href="#">Theo dõi</a>
-                </div>
+            <button class="dropdown-btn">Quản lý hệ thống 
+                {{-- <i class="fa fa-caret-down"></i> --}}
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Quản lí nhân viên</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Theo dõi</a>
             </div>
+        {{--     @if(isset($user_login))
+            <div class="dropdown-container">
+                <i>{{$user_login->name}}</i>
+                <a href="#">Setting</a>
+                <a href="admin/logout">Logout</a>
+            </div>
+            @endif --}}
+            <a href="admin/logout" class="btn btn-danger">Logout</a>
         </div>
-        <div class="content col-md-10">
-            @yield('content')
-        </div>
-        </div>
-    </div>{{-- endcontainer --}}
+    </div>
+    <div class="content col-md-10 col-sm-10">
+        @yield('content')
+    </div>
+</div>
+</div>{{-- endcontainer --}}
 <script type="text/javascript">
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
     for (i = 0; i < dropdown.length; i++) {
         dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if
-        (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } 
-        else 
-        {
-            dropdownContent.style.display = "block";
-        }
-        });
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if
+                (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } 
+                else 
+                {
+                    dropdownContent.style.display = "block";
+                }
+            });
     }
 </script>
 
