@@ -20,6 +20,9 @@ Route::get('home', function (){
 Route::get('aboutus', function () {
     return view('widget.aboutus');
 });
+Route::get('contact', function () {
+    return view('widget.contact');
+});
 
 Route::get('admin/login','useradController@getlogin');
 Route::post('admin/login','useradController@postlogin')->name('admin/login');

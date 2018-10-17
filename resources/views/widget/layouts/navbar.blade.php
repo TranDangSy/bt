@@ -8,7 +8,7 @@
                 <li class="actived"><a href="home">Trang chủ</a></li>
                 <li><a href="aboutus">Về chúng tôi</a></li>
                 <li><a href="">Newsroom</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="contact">Liên hệ</a></li>
             </ul>
         </div>
     </div>
