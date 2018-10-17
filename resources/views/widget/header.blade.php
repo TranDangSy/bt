@@ -12,5 +12,6 @@
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/font-awesome.min.css" rel="stylesheet">
 	{{-- <link href="../css/main.css" rel="stylesheet"> --}}
-	<link href="../css/responsive.css" rel="stylesheet">		     
+	<link href="../css/responsive.css" rel="stylesheet">
 </head><!--end head-->
+{{--file gì đây>???--}}
