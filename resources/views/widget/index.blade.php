@@ -55,4 +55,3 @@
     <div class="footer" style="color: red">
         @yield('footer')
     </div>
-</body>

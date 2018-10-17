@@ -8,7 +8,8 @@
     <!--title-->
     <title>Vinfast</title>
     <!--CSS-->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="../admin_asset/css/style.css" type="text/css"/>      --}}
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head><!--/head-->
