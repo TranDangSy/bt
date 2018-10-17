@@ -135,6 +135,7 @@
     background: #f4c842;
     border: 1px solid #000066;
 }
+
 /*  .a:link, a:visited { 
     color: yellow;
     text-decoration: underline;
@@ -146,6 +147,10 @@
 }
 .noi-dung-header{
     margin-top: 40px;
+    text-align: center;
 }
-
+.noi-dung  h2 {
+    text-align: center;
+}
+ 
 /*end css homeuser*/
