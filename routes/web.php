@@ -36,3 +36,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminlogin'],function(){
 	Route::get('/','useradController@index');
 	Route::get('laixe','useradController@getlaixe');
 });
+
+Route::get('testhome',function(){
+	return view('testhome');
+});

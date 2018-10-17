@@ -1,0 +1,108 @@
+body {
+	background: #ccc;
+}
+.wrapper {
+	width: 100%;
+}
+.banner {
+	height: 70px;
+	width: 100%;
+	background: #222;
+}
+.navigation-bar {
+	padding: 10px;
+	background: gray;
+	height: -webkit-fill-available;
+}
+.navigation-bar ul {
+	display: block;
+}
+.navigation-bar ul li {
+	list-style-type: none;
+	border: 1px solid gray;
+	padding: 10px 0;
+	font-size: 18px;
+}
+.navigation-bar ul li:hover {
+	background: #888;
+	border: 1px solid #fff;
+}
+.navigation-bar ul li a {
+	color: #fff;
+}
+.navigation-bar ul li a i {
+	width: 20px;
+	text-align: center;
+}
+.thong-ke {
+	margin-top: 20px;
+}
+.thong-ke-content {
+	height: 100px;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.thong-ke-content .number {
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.thong-ke-content .content-number {
+	font-size: 20px;
+	font-style: italic;
+	color: #f3f3f3;
+}
+.first-content {
+	background: #ff0000;
+	border: 3px solid #990000;
+}
+.second-content {
+	background: #0066FF;
+	border: 3px solid #000066;
+}
+.third-content {
+	background: #33CC66;
+	border: 3px solid #006600;
+}
+.noi-dung {
+	margin-top: 80px;
+	background: #fff;
+	padding: 30px;
+}
+.noi-dung .tieu-de-noi-dung {
+	padding: 10px;
+	background: rgba(255, 0, 0, 1);
+	width: 250px;
+	border: 2px solid rgba(255, 0, 255, 0.8);
+	margin-top: -80px;
+}
+.noi-dung .tieu-de-noi-dung h2 {
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+}
+.form-noi-dung {
+	margin-top: 100px;
+	background: gray;
+	padding: 50px;
+	height: 250px;
+}
+.form-noi-dung-2 {
+	margin-top: 100px;
+	background: blue;
+	padding: 50px;
+	color: #fff;
+	height: 250px;
+}
+.number-of-noi-dung {
+	width: 30px;
+	height: 30px;
+	background: #ff0000;
+	color: #fff;
+	border-radius: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 3px 10px;
+	margin: -60px auto 30px auto;
+}
