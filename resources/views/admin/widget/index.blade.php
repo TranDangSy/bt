@@ -8,16 +8,16 @@
                 </a>
             </div>
             <div class="co-md-10 col-sm-10">
-                <a href="admin/logout" class="fa fa-user faicon">Logout</a>
+                <a href="{{'public/admin/logout'}}" class="fa fa-user faicon">Logout</a>
             </div>    
         </div>{{-- end row --}}
         <div class="select col-md-2 col-sm-2">
             <div class="sidenav">
-                <a href="admin" class="fa fa-home">Trang chủ</a>
+                <a href="<?php echo "public/admin" ?>" class="fa fa-home">Trang chủ</a>
                 <button class="dropdown-btn fa fa-pencil">Quản lí người dùng
                 </button>
                 <div class="dropdown-container">
-                    <a href="admin/laixe">Quản lí lái xe</a>
+                    <a href="<?php echo "public/admin/laixe" ?>">Quản lí lái xe</a>
                 </div>
                 <button class="dropdown-btn fa fa-pencil">Quản lý hệ thống 
                 </button>

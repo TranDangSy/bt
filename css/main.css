@@ -12,6 +12,7 @@
     text-decoration:none;  
 }
 .sidenav {
+    float: left;
     height: -webkit-fill-available;
     width: 220px;
     position: relative;
@@ -145,12 +146,5 @@
     color: red;
     }*/
 }
-.noi-dung-header{
-    margin-top: 40px;
-    text-align: center;
-}
-.noi-dung  h2 {
-    text-align: center;
-}
- 
+
 /*end css homeuser*/
