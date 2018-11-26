@@ -14,13 +14,13 @@
     <div class="carousel-setting">
         <div id="demo" class="carousel slide" data-ride="carousel">
 
-            <!-- Indicators -->
+
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
             </ul>
 
-            <!-- The slideshow -->
+
             <div class="carousel-inner carousel-setting">
                 <div class="carousel-item active">
                     <img src="https://i.imgur.com/03glcRW.png" alt="">
@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <!-- Left and right controls -->
+
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>

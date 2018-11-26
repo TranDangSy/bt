@@ -23,6 +23,9 @@ Route::get('aboutus', function () {
 Route::get('contact', function () {
     return view('widget.contact');
 });
+Route::get('news', function () {
+    return view('widget.news');
+});
 
 Route::get('admin/login','useradController@getlogin');
 Route::post('admin/login','useradController@postlogin')->name('admin/login');
