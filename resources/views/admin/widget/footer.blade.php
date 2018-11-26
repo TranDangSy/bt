@@ -1,7 +1,7 @@
-	<script src="../css/jquery-2.2.3.min.js"></script>
-	<script src="../css/bootstrap.js"></script>
-	<script src="../css/aos.js"></script>
-	<script src="../css/aos1.js"></script>
+	<script src="css/jquery-2.2.3.min.js"></script>
+	<script src="css/bootstrap.js"></script>
+	<script src="css/aos.js"></script>
+	<script src="css/aos1.js"></script>
 	<script type="text/javascript">
 		var dropdown = document.getElementsByClassName("dropdown-btn");
 		var i;
@@ -19,6 +19,14 @@
 					}
 				});
 		}
+	</script>
+	<script type="text/javascript">
+			$(function () {  
+				$("#datetimepicker").datepicker({         
+				autoclose: true,         
+				todayHighlight: true 
+				}).datepicker('update', new Date());
+			});
 	</script>
 </body>
 </html>

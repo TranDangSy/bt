@@ -9,7 +9,7 @@
         <div class="title_left">
           <h2 class="fa fa-1 fa-home">Trang chủ/Lái xe</h2>
           <h3>Danh sách người dùng</h3>
-          <a href="javascript:void(0)" class="btn btn-primary">Thêm</a>
+          <a href="javascript:void(0)" class="btn btn-primary">Thêm lái xe</a>
         </div>
       </div>
       <div class="form-group" class="col-md-2">
@@ -57,7 +57,7 @@
                           <a href="" class="btn btn-danger" title="Khoá">Tắt</a>
                           <a href="" class="btn btn-success" title="Khoá">Bật</a>
                           <a class="btn btn-warning"  href=''>Sửa</a>
-                          <a class="btn btn-danger"  href='{{'public/admin/chitiet'}}'>Xem</a></td>
+                          <a class="btn btn-danger"  href=''>Xem</a></td>
                         </td>
                         <td>
                         </tr>
@@ -70,7 +70,7 @@
                             <a href="" class="btn btn-danger" title="Khoá">Tắt</a>
                             <a href="" class="btn btn-success" title="Khoá">Bật</a>
                             <a class="btn btn-warning"  href=''>Sửa</a>
-                            <a class="btn btn-danger"  href='{{'public/admin/chitiet'}}'>Xem</a>
+                            <a class="btn btn-danger"  href=''>Xem</a>
                           </td>
                         </td>
                         <td>
@@ -84,13 +84,25 @@
                             <a href="" class="btn btn-danger" title="Khoá">Tắt</a>
                             <a href="" class="btn btn-success" title="Khoá">Bật</a>
                             <a class="btn btn-warning"  href=''>Sửa</a>
-                            <a class="btn btn-danger"  href='{{'public/admin/chitiet'}}'>Xem</a>
+                            <a class="btn btn-danger"  href=''>Xem</a>
                           </td>
                         </td>
                         <td>
                         </tr>
                       </tbody>
                     </table>
+                    <div  style="padding-left: 40%">
+                      <ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+                    </div>
+
                   </div>
                 </div>
               </div>

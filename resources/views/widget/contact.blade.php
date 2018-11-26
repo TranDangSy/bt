@@ -1,17 +1,25 @@
 @extends('widget.layouts.structure')
 @section('content')
+<style type="text/css">
+.actived {
+    border-bottom: none !important;
+}
+.contact {
+    border-bottom: 2px solid #c00000 !important;
+}
+</style>
     <div class="container-grid">
         <div class="contact_info">
             <h2 style="font-family: 'Gilroy ExtraBold'; color: whitesmoke; margin: 30px;
     position: relative;">Contact us</h2>
             <h6>Main office</h6>
-            <p>Dinh Vu - Cat Hai Economic Zone, Cat Hai Island, Cat Hai Town, Cat Hai District, Hai Phong City, Vietnam</p>
+            <p>Số 54 street Trieu Khuc, Thanh Xuan districts, Ha Noi city</p>
             <h6>Branch office at Hanoi</h6>
             <p>Floor 4, Tower 1, Times City, 458 Minh Khai Hai Ba Trung, Hanoi, Vietnam</p>
             <h6>Email</h6>
-            <p>contact@vinfast.vn</p>
+            <p>dangsy1998@gmail.com</p>
             <h6>Phone number</h6>
-            <p>(+84) 24 3974 8579</p>
+            <p>0386496611</p>
         </div>
         <form>
 

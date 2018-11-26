@@ -2,7 +2,7 @@
 <html>
 <head>
     <base href="{{asset('../admin_asset')}}">
-    <title>Create account</title>
+    <title>Update account</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
@@ -113,7 +113,7 @@
         <div class="splash-container">
             <div class="panel panel-default panel-border-color panel-border-color-primary">
                 <div class="panel-heading">
-                    <img src="admin_asset/img/vinfast.PNG" alt="logo" width="150px" height="40px" class="logo-img">
+                    <img src="admin_asset/img/vinfast.PNG" alt="logo" width="200px" height="60px" class="logo-img">
                     <span class="splash-description">Chào mừng đến với trang quản trị Vinfast</span>
                 </div>
                 <div class="panel-body">
@@ -123,40 +123,23 @@
                     <form action="{{route('create')}}" method="POST">
                         <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                         <div class="form-group">
-                            <label for="name">Họ tên:</label>
-                            <input type="text" placeholder="Nhập name của bạn" class="form-control" name="name" required autofocus>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Image ảnh:</label>
-                            <input type="file" placeholder="Image for you.." class="form-control" name="useravatar">
-                        </div>
-
-                        <div class="form-group">
                             <label for="email">Email:</label>
                             <input id="email" type="email" placeholder="Nhập email của bạn" class="form-control" name="email">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input id="password" type="password" placeholder="Nhập password của bạn" class="form-control" name="password">
+                            <label for="password">Password old:</label>
+                            <input id="password" type="password" placeholder="Nhập password cũ của bạn" class="form-control" name="password">
                         </div>
                         <div class="form-group">
-                            <label for="gender">Gender:</label>
-                            <input type="text" placeholder="Nhập giới tính của bạn" class="form-control" name="gender">
+                            <label for="password">Password new:</label>
+                            <input id="password" type="password" placeholder="Nhập password mới của bạn" class="form-control" name="password">
                         </div>
                         <div class="form-group">
-                            <label for="address">Địa chỉ:</label>
-                            <input type="text" placeholder="Nhập address của bạn" class="form-control" name="address">
-                        </div>
-                        <div class="form-group">
-                            <label for="level">User level:</label>
-                            <input type="text" placeholder="Nhập level" class="form-control" name="level">
-                        </div>
-                        <div class="form-group">
-                            <label for="status">User status:</label>
-                            <input type="text" placeholder="Nhập status" class="form-control" name="status">
+                            <label for="password">Confirm password</label>
+                            <input id="password" type="password" placeholder="Nhập lại mật khẩu mới" class="form-control" name="password">
                         </div>
                         <div class="form-group login-submit">
-                            <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">Register</button>
+                            <button data-dismiss="modal" type="submit" class="btn btn-danger btn-xl">Xác nhận thay đổi</button>
                         </div>
                     </form>
                 </div>

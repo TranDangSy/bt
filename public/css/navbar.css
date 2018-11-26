@@ -10,6 +10,11 @@
 .actived {
     border-bottom: 2px solid #c00000;
 }
+
+.actived a:hover{
+    color: white ;
+}
+
 .navigation {
     text-align: right;
     margin: 28px 60px;

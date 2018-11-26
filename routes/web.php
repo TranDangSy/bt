@@ -15,7 +15,7 @@ Route::get('/', function () {
     return redirect('/home');
 });
 Route::get('home', function (){
-    return view('widget.content');
+    return view('widget.index');
 });
 Route::get('aboutus', function () {
     return view('widget.aboutus');
@@ -29,12 +29,17 @@ Route::post('admin/login','useradController@postlogin')->name('admin/login');
 
 Route::get('create','useradController@getcreate');
 Route::post('create','useradController@postcreate')->name('create');
+Route::get('updatelogin','useradController@postupdate');
 
 Route::get('admin/logout','useradController@logout');
 
 Route::group(['prefix'=>'admin','middleware'=>'adminlogin'],function(){
 	Route::get('/','useradController@index');
 	Route::get('laixe','useradController@getlaixe');
+	Route::get('chitiet','useradController@getchitiet');
+	Route::get('contact','useradController@getcontact');
+	Route::get('admin','useradController@getadmin');
+	Route::get('chitietad','useradController@getchitietad');
 });
 
 Route::get('testhome',function(){

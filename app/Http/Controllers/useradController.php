@@ -15,11 +15,31 @@ class useradController extends Controller
     }
     
     public function getlaixe(){
-    	return view('admin.home.laixe');
+    	return view('admin.home.laixe1');
+    }
+
+    public function getchitiet(){
+        return view('admin.home.chitiet');
     }
 
     public function getlogin(){
     	return view('admin.login');
+    }
+
+    public function getcontact(){
+        return view('admin.home.contact');
+    }
+
+    public function getadmin(){
+        return view('admin.user.admin1');
+    }
+
+    public function getchitietad(){
+        return view('admin.user.chitietadmin');
+    }
+
+    public function postupdate(){
+        return view('widget.updatelogin');
     }
 
     public function postlogin(Request $request){
@@ -48,10 +68,18 @@ class useradController extends Controller
 
     public function postcreate(Request $request){
     	 	$user = new User;
+            $user->name = $request->name;
+            $file = $request->useravatar;
+            $file->move('upload',$file->getClientOriginalName());
+            $user->useravatar = $file;
         	$user->email = $request->email;
-        	$user->password = Hash::make($request->password);
+            $user->password = Hash::make($request->password);
+            $user->gender = $request->gender;
+            $user->address = $request->address;
+            $user->userlevel = $request->level;
+            $user->userstatus = $request->status;
         	$user->save();
-        	return redirect('create');
+        	return redirect('create')->with('thongbao','Tạo tài khoản thành công hãy đăng nhập');
     }
 
     public function logout(){

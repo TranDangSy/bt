@@ -1,5 +1,13 @@
 @extends('widget.layouts.structure')
 @section('content')
+<style type="text/css">
+    .actived {
+    border-bottom: none !important;
+}
+.aboutus {
+    border-bottom: 2px solid #c00000 !important;
+}
+</style>
 <div class="frontpicaboutus">
     <img src="https://i.imgur.com/OVOvfQ4.png" alt="">
 </div>
